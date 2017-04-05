@@ -79,29 +79,7 @@
 
 
 
-<script>
-//tanchuang
-var showi=0;
-$(window).load(function shows(){  
-	   setTimeout(function(){
-		   $(".Tpiaochuan").stop().fadeIn(500);   
-	   },30000);
-	   $(function closee(){   
-		  $(".noneyin").click(function(){  
-			  $(".Tpiaochuan").stop().fadeOut(200);
-			  
-			  if(showi!=1)
-			  {
-					 shows(); 
-					 showi++;
-			  }
-			  })
-		  });
-     $(function gb(){
-        $(".Tpiaochuan").hide();
-     });
-	});
-</script>
+
 <style type="text/css">
 .Tpiaochuan{ width:500px; height:230px; background:url(./img/bgx-1.png) no-repeat center center; position:fixed; left:50%; margin-left:-250px; z-index:9999; top:50%; margin-top:-115px;
 	background-size:100% 100%;
@@ -117,7 +95,29 @@ $(window).load(function shows(){
  <div class="noneyin" onclick="gb();"><img src="./img/bgx-2.png" width="208" height="49" /></div>
    <div class="zixun"><a href="/plus/qq.php" target="_blank"><img src="./img/bgx-3.png" width="208" height="49" /></a></div>
 </div>
-
+<script>
+//tanchuang
+var showi=0;
+$(window).load(function shows(){  
+     setTimeout(function(){
+       $(".Tpiaochuan").stop().fadeIn(500);   
+     },30000);
+     $(function closee(){   
+      $(".noneyin").click(function(){  
+        $(".Tpiaochuan").stop().fadeOut(200);
+        
+        if(showi!=1)
+        {
+           shows(); 
+           showi++;
+        }
+        })
+      });
+     $(function gb(){
+        $(".Tpiaochuan").hide();
+     });
+  });
+</script>
 
 
 
